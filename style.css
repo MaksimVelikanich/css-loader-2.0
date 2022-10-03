@@ -1,0 +1,68 @@
+* {
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dot {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.one {
+    margin-right: 400px;
+    background-color: rgb(41, 128, 243);
+    animation: anim 1s linear infinite 0.1s;
+    animation-delay: 0s;
+
+}
+
+.two {
+    margin-right: 200px;
+    background-color: rgb(21, 91, 182);
+    animation: anim 1s linear infinite 0.2s;
+}
+
+.three {
+    background-color: #5e3df3;
+    animation: anim 1s linear infinite 0.3s;
+}
+
+.four {
+    margin-left: 200px;
+    background-color: rgb(184, 58, 142);
+    animation: anim 1s linear infinite 0.4s;
+}
+
+.five {
+    margin-left: 400px;
+    background-color: pink;
+    animation: anim 1s linear infinite 0.5s;
+}
+
+@keyframes anim {
+    0% {
+        width: 100px;
+        height: 100px;
+       
+    }
+
+    50% {
+        width: 150px;
+        height: 150px;
+        opacity: 0.4;
+    }
+
+    100% {
+            width: 100px;
+            height: 100px;
+    }
+}
